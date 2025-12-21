@@ -1,10 +1,10 @@
 # Week 4: DLL and Recursion
 
-### 1. Adding to the end of a DLL
-To add an element at the end, I create a new node. I set its `prev` to the current `tail`, then set `tail->next` to the new node. Finally, I move the `tail` pointer to the new node.
+### 1. How to add an element end of double linked list?
+To add an element at the end, I create a new node. I set its `prev` pointer to the current `tail` node, then set the current `tail->next` to point to this new node. Finally, I update the `tail` pointer to the new node.
 
-### 2. Recursive deletion
-I can delete everything using a function that calls itself for the `next` node until it hits `NULL`, then frees the nodes as it returns.
+### 2. How you can delete all the elements of a linked list? (Recursive)
+I can delete all elements using a recursive function that traverses to the end of the list first, and then frees each node as the recursion unwinds.
 
 ```c
 void delete_all(struct Node* h) {
