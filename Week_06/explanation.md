@@ -1,10 +1,8 @@
-# Week 6: Tree Theory - Pre-order Traversal
+# Week 6: Binary Tree Theory
 
 ### Why do we use Pre-order Traversal?
-Pre-order traversal follows the logic of **Root -> Left -> Right**. It is essential in data structures for several reasons:
+Pre-order traversal (Root -> Left -> Right) is important in computer science for several key reasons:
 
-1. **Compilers and Abstract Syntax Trees (AST):** As seen in the course materials, compilers represent code structures using ASTs. Pre-order traversal is used to explore these trees to understand the logic of an expression (like `a = b + c * 2`) before it is executed.
-
-2. **Creating a Copy of a Tree:** If you want to create an exact duplicate of an existing tree, pre-order is the most efficient method because you create the "parent" node before trying to create its "children."
-
-3. **Prefix Notation (Polish Notation):** Pre-order traversal of an expression tree results in prefix notation, which is often used in certain types of logic processing and compiler design.
+1. **Compiler Logic:** As discussed in class, compilers use Abstract Syntax Trees (AST) to represent the structure of program code. Pre-order traversal allows the compiler to navigate the tree and understand the order of operations in an expression.
+2. **Duplicating Trees:** If you want to make an exact copy of a tree, you must use pre-order because it creates the parent node before it tries to create the child nodes.
+3. **Prefix Notation:** It is used to convert mathematical expression trees into prefix notation, where the operator is placed before its operands.
