@@ -13,16 +13,9 @@ void delete_all(struct Node* h) {
     free(h);
 }
 
-// Assume newNode is created and NodeA/NodeB are identified
-newNode->prev = NodeA;   // Link newNode back to NodeA
-newNode->next = NodeB;   // Link newNode forward to NodeB
-NodeA->next   = newNode; // Link NodeA forward to newNode
-NodeB->prev   = newNode; // Link NodeB back to newNode
+### 3. How to add an element between elements in a DLL?
+You must update 4 pointers: the new node’s next and prev, the previous node’s next, and the next node’s prev.
 
-
-- **Standard List:** The last node's 'next' pointer is always NULL. 
-  * Sorting: Algorithms stop naturally when they hit the NULL terminator.
-
-- **Circular List:** The last node's 'next' pointer points back to the 'head'.
-  * Sorting: Algorithms must save the head address; otherwise, they 
-    will loop infinitely because they never encounter a NULL.
+### 4. Difference between Circular Linked List and Standard Linked List
+Standard: The last node's next pointer is NULL.
+Circular: The last node's next pointer points back to the first node, creating a loop.
