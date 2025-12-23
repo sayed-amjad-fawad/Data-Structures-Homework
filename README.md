@@ -19,7 +19,7 @@
 
 ## 📂 Official Assignment Repository (1-10)
 
-The following topics represent the 10 core assignments required for the final evaluation:
+The following topics represent the 10 core assignments required for the final evaluation as per the course forum:
 
 - [x] **01_Sparse_Matrix**: Triplet Representation conversion.
 - [x] **02_Hanoi_Tower**: Recursive solution for Tower of Hanoi.
@@ -34,22 +34,9 @@ The following topics represent the 10 core assignments required for the final ev
 
 ---
 
-## 📁 In-Class Homeworks (Archived)
-This folder contains additional weekly exercises and implementation logic covered during the semester:
-
-* **Week 01**: Basic Array logic and insertion.
-* **Week 02**: Big O Notation and complexity theory.
-* **Week 03**: Singly Linked List foundations.
-* **Week 04**: Doubly Linked Lists and recursive deletion.
-* **Week 05**: Original Shunting Yard algorithm draft.
-* **Week 06**: Binary Trees and pre-order traversal logic.
-* **Week 11**: Graph Clustering methods and adjacency matrix logic.
-
----
-
 ## 💻 Technologies Used
 * **Language:** C
-* **Tools:** GitHub, VS Code
+* **Platform:** GitHub
 
 ---
-*Status: Portfolio complete and verified for submission.*
+*Status: All official assignments (1-10) completed and verified.*
