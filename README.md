@@ -12,7 +12,7 @@
 | :--- | :--- |
 | **Name** | SAYED AMJAD FAWAD |
 | **Student Number** | 2410213509 |
-| **Course** | CS1102: Data Structures and Algorithms |
+| **Course** | Data Structures and Algorithms |
 | **Year** | 2nd Year |
 
 ---
