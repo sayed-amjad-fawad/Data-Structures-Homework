@@ -1,0 +1,45 @@
+/* * HW 10: Tree Creation using an Array
+ * * Complexity:
+ * - Time: O(n) to visit and print each element in the tree.
+ * - Space: O(1) beyond the array itself.
+ */
+
+#include <stdio.h>
+
+// We represent a binary tree in a simple array
+// Root is at index 0
+// Left child of index i is at 2i + 1
+// Right child of index i is at 2i + 2
+void printTree(int tree[], int n, int i) {
+    if (i < n && tree[i] != -1) {
+        printf("Node: %d ", tree[i]);
+        
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
+
+        if (left < n) printf("(Left Child: %d) ", tree[left]);
+        if (right < n) printf("(Right Child: %d)", tree[right]);
+        
+        printf("\n");
+        
+        // Move to the next nodes
+        printTree(tree, n, left);
+        printTree(tree, n, right);
+    }
+}
+
+int main() {
+    // Array representation of a tree:
+    //      10
+    //     /  \
+    //    20   30
+    //   /  \
+    //  40  50
+    int myTree[] = {10, 20, 30, 40, 50};
+    int n = 5;
+
+    printf("Binary Tree structure from Array:\n");
+    printTree(myTree, n, 0);
+
+    return 0;
+}
